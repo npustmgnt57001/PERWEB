@@ -7,212 +7,54 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        <a href="index.html">回到首頁</a>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: #f8fafc;
-        }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f8fafc; }
         .bg-npust-green { background-color: #00703c; }
         .text-npust-green { color: #00703c; }
-        .hover-npust-green:hover { background-color: #005a30; }
-        .card-shadow { transition: all 0.3s ease; }
         .card-shadow:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
 <body class="text-gray-800">
 
-    <!-- 簡易導覽列 -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center text-npust-green font-bold">
-                <i class="fas fa-arrow-left mr-2"></i> 回到導覽頁面
+            <a href="index.html" class="flex items-center text-npust-green font-bold hover:underline">
+                <i class="fas fa-arrow-left mr-2"></i> 回到個人門戶
             </a>
-            <div class="text-sm font-medium text-gray-500">
-                研發處 產學合作中心
-            </div>
+            <div class="text-sm font-medium text-gray-500">研發處 產學合作中心</div>
         </div>
     </nav>
 
-    <!-- 頁首標題 -->
-    <header class="py-16 bg-white border-b border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">啟動您的產學對接鏈結</h1>
-            <p class="text-gray-500 text-lg">選擇您的身份，我們將引導您至正確的合作流程與表單系統</p>
-        </div>
+    <header class="py-16 bg-white border-b border-gray-100 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">啟動您的產學對接鏈結</h1>
+        <p class="text-gray-500 text-lg">選擇您的身份，我們將引導您至正確的合作流程</p>
     </header>
 
-    <!-- 身份選擇區塊 -->
-    <main class="max-w-7xl mx-auto px-4 py-16">
-        <div class="grid md:grid-cols-3 gap-8">
-            
-            <!-- 企業合作 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col">
-                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                    <i class="fas fa-building"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">企業端 / 合作對接</h2>
-                <p class="text-gray-500 mb-8 flex-grow">尋求技術授權、委託研發計畫或進駐創新育成中心，建立長期產學夥伴關係。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/enterprise-services/" target="_blank" class="block w-full text-center py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
-                    前往官網企業服務
-                </a>
-            </div>
+    <main class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col transition-all">
+            <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6"><i class="fas fa-building"></i></div>
+            <h2 class="text-2xl font-bold mb-4">企業端 / 合作對接</h2>
+            <p class="text-gray-500 mb-8 flex-grow">尋求技術授權、委託研發計畫或進駐創新育成中心。</p>
+            <a href="https://rdo.npust.edu.tw/iacc/enterprise-services/" target="_blank" class="block w-full text-center py-4 bg-blue-600 text-white rounded-xl font-bold">前往官網服務</a>
+        </div>
 
-            <!-- 教師研究 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border-2 border-npust-green/20 flex flex-col relative">
-                <div class="absolute -top-4 right-8 bg-npust-green text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">
-                    校內專區
-                </div>
-                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-npust-green text-2xl mb-6">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">教師端 / 計畫申請</h2>
-                <p class="text-gray-500 mb-8 flex-grow">辦理產學合作合約、專利申請諮詢及技轉獎勵申報，獲取行政資源支援。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/teacher-services/" target="_blank" class="block w-full text-center py-4 bg-npust-green text-white rounded-xl font-bold hover-npust-green transition shadow-lg shadow-green-200">
-                    前往官網教師專區
-                </a>
-            </div>
+        <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col transition-all">
+            <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-npust-green text-2xl mb-6"><i class="fas fa-user-graduate"></i></div>
+            <h2 class="text-2xl font-bold mb-4">教師端 / 計畫申請</h2>
+            <p class="text-gray-500 mb-8 flex-grow">辦理產學合作合約、專利申請諮詢及技轉獎勵申報。</p>
+            <a href="https://rdo.npust.edu.tw/iacc/teacher-services/" target="_blank" class="block w-full text-center py-4 bg-npust-green text-white rounded-xl font-bold">前往教師專區</a>
+        </div>
 
-            <!-- 學生實習 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col">
-                <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">學生端 / 實習媒合</h2>
-                <p class="text-gray-500 mb-8 flex-grow">掌握最新企業實習職缺、產學班資訊及創業競賽培訓計畫，厚植就業力。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/student-services/" target="_blank" class="block w-full text-center py-4 bg-amber-600 text-white rounded-xl font-bold hover:bg-amber-700 transition shadow-lg shadow-amber-200">
-                    前往官網學生服務
-                </a>
-            </div>
-
+        <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col transition-all">
+            <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6"><i class="fas fa-briefcase"></i></div>
+            <h2 class="text-2xl font-bold mb-4">學生端 / 實習媒合</h2>
+            <p class="text-gray-500 mb-8 flex-grow">掌握最新企業實習職缺、產學班資訊及創業培訓。</p>
+            <a href="https://rdo.npust.edu.tw/iacc/student-services/" target="_blank" class="block w-full text-center py-4 bg-amber-600 text-white rounded-xl font-bold">前往學生服務</a>
         </div>
     </main>
 
-    <!-- 頁尾 -->
-    <footer class="py-12 border-t border-gray-200 text-center text-gray-400 text-xs">
-        <p>© 2024 NPUST 產學合作中心. <a href="https://rdo.npust.edu.tw/iacc/" target="_blank" class="underline">訪問官網首頁</a></p>
+    <footer class="py-12 text-center text-gray-400 text-xs">
+        © 2024 NPUST 產學合作中心.
     </footer>
-
-</body>
-</html>
-
-aolab.html
-6 KB
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>國立屏東科技大學 研究發展處 產學合作中心 | NPUST IACC</title>
-
-colab.html
-8 KB
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周哲平 | 屏科大工管系 產學合作專業門戶</title>
-
-index.html
-18 KB
-圖片
-圖片
-好累 — 下午 05:41
-https://npustmgnt57001.github.io/PERWEB/
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>加入合作 | 國立屏東科技大學 產學合作中心</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: #f8fafc;
-        }
-        .bg-npust-green { background-color: #00703c; }
-        .text-npust-green { color: #00703c; }
-        .hover-npust-green:hover { background-color: #005a30; }
-        .card-shadow { transition: all 0.3s ease; }
-        .card-shadow:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
-    </style>
-</head>
-<body class="text-gray-800">
-
-    <!-- 簡易導覽列 -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center text-npust-green font-bold">
-                <i class="fas fa-arrow-left mr-2"></i> 回到導覽頁面
-            </a>
-            <div class="text-sm font-medium text-gray-500">
-                研發處 產學合作中心
-            </div>
-        </div>
-    </nav>
-
-    <!-- 頁首標題 -->
-    <header class="py-16 bg-white border-b border-gray-100">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">啟動您的產學對接鏈結</h1>
-            <p class="text-gray-500 text-lg">選擇您的身份，我們將引導您至正確的合作流程與表單系統</p>
-        </div>
-    </header>
-
-    <!-- 身份選擇區塊 -->
-    <main class="max-w-7xl mx-auto px-4 py-16">
-        <div class="grid md:grid-cols-3 gap-8">
-            
-            <!-- 企業合作 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col">
-                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-                    <i class="fas fa-building"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">企業端 / 合作對接</h2>
-                <p class="text-gray-500 mb-8 flex-grow">尋求技術授權、委託研發計畫或進駐創新育成中心，建立長期產學夥伴關係。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/enterprise-services/" target="_blank" class="block w-full text-center py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
-                    前往官網企業服務
-                </a>
-            </div>
-
-            <!-- 教師研究 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border-2 border-npust-green/20 flex flex-col relative">
-                <div class="absolute -top-4 right-8 bg-npust-green text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-wider">
-                    校內專區
-                </div>
-                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-npust-green text-2xl mb-6">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">教師端 / 計畫申請</h2>
-                <p class="text-gray-500 mb-8 flex-grow">辦理產學合作合約、專利申請諮詢及技轉獎勵申報，獲取行政資源支援。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/teacher-services/" target="_blank" class="block w-full text-center py-4 bg-npust-green text-white rounded-xl font-bold hover-npust-green transition shadow-lg shadow-green-200">
-                    前往官網教師專區
-                </a>
-            </div>
-
-            <!-- 學生實習 -->
-            <div class="bg-white rounded-3xl p-8 card-shadow border border-gray-100 flex flex-col">
-                <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">
-                    <i class="fas fa-briefcase"></i>
-                </div>
-                <h2 class="text-2xl font-bold mb-4">學生端 / 實習媒合</h2>
-                <p class="text-gray-500 mb-8 flex-grow">掌握最新企業實習職缺、產學班資訊及創業競賽培訓計畫，厚植就業力。</p>
-                <a href="https://rdo.npust.edu.tw/iacc/student-services/" target="_blank" class="block w-full text-center py-4 bg-amber-600 text-white rounded-xl font-bold hover:bg-amber-700 transition shadow-lg shadow-amber-200">
-                    前往官網學生服務
-                </a>
-            </div>
-
-        </div>
-    </main>
-
-    <!-- 頁尾 -->
-    <footer class="py-12 border-t border-gray-200 text-center text-gray-400 text-xs">
-        <p>© 2024 NPUST 產學合作中心. <a href="https://rdo.npust.edu.tw/iacc/" target="_blank" class="underline">訪問官網首頁</a></p>
-    </footer>
-
 </body>
 </html>
