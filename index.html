@@ -27,6 +27,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
 
+    <!-- 導覽列 -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
@@ -37,7 +38,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-6">
                         <a href="#home" class="text-slate-600 hover:text-blue-700 px-3 py-2 font-medium transition">首頁</a>
-                        <a href="colab.html" class="text-blue-700 bg-blue-50 px-3 py-2 rounded-md font-bold transition">產學中心合作</a>
+                        <a href="#iacc" class="text-blue-700 bg-blue-50 px-3 py-2 rounded-md font-bold transition">產學中心合作</a>
                         <a href="#certs" class="text-slate-600 hover:text-blue-700 px-3 py-2 font-medium transition">專業證照</a>
                         <a href="#projects" class="text-slate-600 hover:text-blue-700 px-3 py-2 font-medium transition">實務專案</a>
                         <a href="#contact" class="bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-blue-900 transition shadow-lg">聯絡我</a>
@@ -47,6 +48,7 @@
         </div>
     </nav>
 
+    <!-- 英雄區塊 -->
     <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center py-12">
             <div class="md:w-1/2 text-white text-center md:text-left">
@@ -58,7 +60,7 @@
                     致力於將工業工程理論轉化為企業實務。透過與「屏科大產學合作中心」的緊密連結，參與多項產學媒合與技術優化專案。
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="colab.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition flex items-center justify-center shadow-xl shadow-blue-500/20">
+                    <a href="#iacc" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition flex items-center justify-center shadow-xl shadow-blue-500/20">
                         <i class="fas fa-handshake mr-2"></i> 產學合作專區
                     </a>
                     <a href="#projects" class="bg-slate-800 text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-700 transition flex items-center justify-center">
@@ -78,6 +80,69 @@
         </div>
     </section>
 
+    <!-- 產學合作中心連結區塊 -->
+    <section id="iacc" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-[3rem] p-12 overflow-hidden relative shadow-2xl">
+                <!-- 背景修飾 -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-green-600/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+                
+                <div class="relative z-10 flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-bold mb-6 border border-green-500/30">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                            與研究發展處 產學合作中心對接
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">產學中心：<br>實務研發的強力後盾</h2>
+                        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                            我積極參與產學中心推動的「深耕農業及工業科技」計畫。透過中心的媒合平台，我得以將課堂所學的 TQC Access 資料庫技術與電腦會計專長，直接應用於企業實務流程優化。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+                                <div class="text-blue-400 font-bold text-xl mb-1">媒合交流</div>
+                                <p class="text-slate-500 text-xs">參與中心舉辦之產業論壇，對接工業 4.0 轉型需求。</p>
+                            </div>
+                            <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+                                <div class="text-green-400 font-bold text-xl mb-1">技術支援</div>
+                                <p class="text-slate-500 text-xs">協助研發團隊進行數據清洗與自動化報表產出。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <!-- 產學中心示意卡片 -->
+                        <div class="bg-white rounded-3xl p-8 shadow-inner relative overflow-hidden group">
+                            <div class="flex items-center mb-8">
+                                <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-slate-900 font-bold text-lg leading-none">產學合作中心</h4>
+                                    <p class="text-slate-500 text-xs mt-1">NPUST Industry-Academia Collaboration</p>
+                                </div>
+                            </div>
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center justify-between p-3 bg-slate-50 rounded-xl">
+                                    <span class="text-slate-600 text-sm italic">技術轉移金累積</span>
+                                    <span class="font-bold text-emerald-700">1.2億+</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-slate-50 rounded-xl">
+                                    <span class="text-slate-600 text-sm italic">年度合作計畫</span>
+                                    <span class="font-bold text-emerald-700">500+ 件</span>
+                                </div>
+                            </div>
+                            <!-- 連結已更新為產學合作中心官網 -->
+                            <a href="colab.html" target="_blank" class="block w-full text-center py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition">
+                                了解產學中心詳細資訊
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 證照牆 -->
     <section id="certs" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -117,9 +182,16 @@
         </div>
     </section>
 
+    <!-- 實務專案 -->
     <section id="projects" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-16">重點課題專案</h2>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">重點課題專案</h2>
+                    <p class="text-slate-600">將學科知識轉化為實務方案，針對企業痛點提出數據化對策</p>
+                </div>
+            </div>
+
             <div class="grid md:grid-cols-2 gap-10">
                 <div class="group">
                     <div class="overflow-hidden rounded-2xl mb-6 shadow-md border border-slate-100 bg-slate-200">
@@ -150,22 +222,40 @@
         </div>
     </section>
 
-    <section id="contact" class="py-24 bg-slate-900 text-white text-center">
-        <h2 class="text-4xl font-bold mb-12">歡迎產學交流與實習合作</h2>
-        <div class="flex flex-wrap justify-center gap-12 mb-16">
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-envelope"></i></div>
-                <span>nick20051023@gmail.com</span>
-            </div>
-            <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center mb-4"><i class="fas fa-location-dot"></i></div>
-                <span>屏科大 工管系二A | 管理學院 4F</span>
+    <!-- 聯絡區塊 -->
+    <section id="contact" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl font-bold mb-6">歡迎產學交流與實習合作</h2>
+            <div class="flex flex-wrap justify-center gap-12 mb-16">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/50 mb-4">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <span class="text-slate-300">nick20051023@gmail.com</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center mb-4">
+                        <i class="fas fa-location-dot text-xl text-blue-400"></i>
+                    </div>
+                    <span class="text-slate-300">屏科大 工管系二A | 管理學院 4F</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-slate-950 text-slate-500 text-center text-xs">
-        © 2024 CHE-PING CHOU. ALL RIGHTS RESERVED.
+    <!-- 頁尾 -->
+    <footer class="py-12 bg-slate-950 text-slate-500 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
+            <div class="mb-6">
+                <span class="text-white font-bold text-xl tracking-tight">周哲平 <span class="font-light text-slate-400">IEM PORTFOLIO</span></span>
+                <p class="text-xs mt-3 leading-relaxed">國立屏東科技大學 工業管理系二A<br>產學合作中心技術培訓學生</p>
+            </div>
+            <div class="text-[10px] uppercase tracking-widest leading-loose">
+                Designed for NPUST IEM & IACC Assignment<br>
+                © 2024 CHE-PING CHOU. ALL RIGHTS RESERVED.
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
